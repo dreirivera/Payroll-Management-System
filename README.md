@@ -77,7 +77,7 @@ For inquiries and customization, feel free to contact Edrei Reigne Rivera.
 
 ## 📜 License
 This project is licensed under a **Proprietary License**.  
-All rights reserved © 2025 [Edrei Reigne Rivera].
+All rights reserved © 2025 Edrei Reigne Rivera.
 
 ---
 
