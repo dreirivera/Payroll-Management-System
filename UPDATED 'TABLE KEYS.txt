@@ -1,0 +1,132 @@
+ATTENDANCE TABLE:
+* Primary Keys:
+- attendance_id
+
+* foreign keys:
+- employee_id (employees table)
+
+* extra added field:
+- none
+
+*removed field
+- overtime_hours
+
+
+DEDUCTIONS TABLE:
+* Primary Keys:
+- deduction_id
+
+* foreign keys:
+-employee_id (employees table)
+- date (overtime table)
+
+* extra added field:
+- none
+
+
+DEPARTMENTS TABLE:
+* Primary Keys:
+- department_id
+
+* foreign keys:
+- none
+
+* extra added field:
+- none
+
+
+
+EMPLOYEES TABLE:
+* Primary Keys:
+- employee_id
+
+* foreign keys:
+- department_id (departments table)
+- manager_id (departments table)
+- tax_id (tax table)
+- salary_id (salary table)
+- Job_title (salary table)
+- sss_number (salary table)
+- pagibig_number (salary table)
+- philhealth_number (salary table)
+
+* extra added field:
+- profile_picture
+
+
+
+Government Contributions TABLE:
+* Primary Keys:
+- contribution_id
+
+* foreign keys:
+- employee_id (employees table)
+- date (overtime table)
+
+* extra added field:
+- none
+
+
+OVERTIME TABLE:
+* Primary Keys:
+- overtime_id
+
+* foreign keys:
+- employee_id (employees table)
+
+* extra added field:
+- date
+
+
+
+PAYROLL TABLE:
+* Primary Keys:
+- payroll_ID
+
+* foreign keys:
+-employee_id (employees table)
+- gross_salary (salary table)
+
+* extra added field:
+- none
+
+
+
+SALARY TABLE:
+* Primary Keys:
+- salary_id
+
+* foreign keys:
+- employee_id (employees table)
+
+* extra added field:
+- none
+- Job_title  
+- sss_number  
+- pagibig_number  
+- philhealth_number  
+
+
+
+TAX TABLE:
+* Primary Keys:
+- tax_id
+
+* foreign keys:
+- employee_id (employees table)
+- salary_id (salary table)
+
+* extra added field:
+- none
+
+
+
+LOGIN TABLE(ADDED TABLE):
+* Primary Keys:
+- login_id
+
+* foreign keys:
+employee_id (employees table)
+
+* extra added field:
+- user_role
